@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito Sans&display=swap");
+* {
+  margin-bottom: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.App {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.Navigation {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.Navigation .container {
+  max-width: 90%;
+  margin-left: 6em;
+}
+
+@media (max-width: 760px) {
+  .Navigation .container {
+    max-width: 100% !important;
+    margin: 0em;
+    padding: 0em;
+  }
+}
+
+.Navigation .container .navbar {
+  padding: 0em 1em;
+}
+
+@media (max-width: 760px) {
+  .Navigation .container .navbar {
+    margin: 0em;
+    padding: 0em;
+  }
+}
+
+.Navigation .container .navbar .nav1 {
+  flex-direction: row;
+}
+
+@media (max-width: 760px) {
+  .Navigation .container .navbar .nav1 .item2 {
+    display: none;
+  }
+}
+
+.Navigation .container .navbar .nav2 {
+  flex-direction: row;
+}
+
+.Navigation .container .navbar .nav2 p {
+  font-size: 16px;
+  margin-bottom: 0em;
+}
+
+.Navigation .container .navbar .nav2 a {
+  font-size: 11px;
+  position: absolute;
+  bottom: 5px;
+  color: #23B3E8;
+}
+
+.SideNavbar .sidenav {
+  width: 8%;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #052231;
+  transition: 0.5s;
+}
+
+.SideNavbar .sidenav .icons {
+  margin: 0.5em 0em;
+}
+
+.SideNavbar .sidenav .hr {
+  margin: 1.5em 0em;
+  opacity: 0.3;
+  height: 2px;
+  background-color: gray;
+}
+
+.SideNavbar .sidenav .vector a {
+  display: block;
+  color: white;
+}
+
+.SideNavbar .sidenav .vector a img {
+  padding: 0.8em;
+}
+
+.SideNavbar .sidenav .vector a img:hover {
+  background-color: #23B3E8;
+  border-radius: 10px;
+}
+
+.SideNavbar .sidenav .vectorgroup a {
+  display: block;
+}
+
+.SideNavbar .sidenav .arrow-right {
+  padding-top: 21em;
+}
+
+.dashboard {
+  position: relative;
+  background-color: #E5E5E5;
+  opacity: 0.8;
+}
+
+.dashboard .allcontainer {
+  margin-left: auto;
+  width: 87% !important;
+  padding: 0em 0em !important;
+}
+
+.dashboard .allcontainer .board {
+  display: flex;
+  margin: 2em 0em;
+  position: relative;
+  padding: 0em 2em;
+}
+
+.dashboard .allcontainer .board .label {
+  padding-right: 1.5em;
+}
+
+.dashboard .allcontainer .board .add {
+  position: absolute;
+  bottom: 100px;
+  right: 5px;
+}
+
+.dashboard .allcontainer .board .add img {
+  width: 100px;
+  height: 100px;
+}
+
+.list {
+  position: relative;
+}
+
+.list .navigation {
+  display: flex;
+  padding-top: 2em !important;
+  padding-bottom: 0em !important;
+  padding-right: 0em !important;
+  padding-left: 0em !important;
+  list-style-type: none;
+}
+
+.list .navigation li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.list .navigation li .link {
+  margin: 0em 1em;
+  padding: 0em 1em;
+  padding-bottom: 1em !important;
+  font-size: 13px;
+  font-weight: bolder;
+  color: gray;
+}
+
+.list .navigation li .link:hover {
+  text-decoration: none;
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.list .navigation .work {
+  padding-left: 9em;
+  display: flex;
+  color: #4DBD98;
+}
+
+.list .navigation .work .item p {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #23B3E8;
+}
+
+.list .navigation .work .toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+  /* The slider */
+  /* Rounded sliders */
+}
+
+.list .navigation .work .toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.list .navigation .work .toggle .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.list .navigation .work .toggle .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+.list .navigation .work .toggle .switch input:checked + .slider {
+  background-color: #F15832;
+}
+
+.list .navigation .work .toggle .switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.list .navigation .work .toggle .switch .slider.round {
+  padding: 0.5em;
+  border-radius: 34px;
+}
+
+.list .navigation .work .toggle .switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.list .navigation .work .all {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #F15832;
+}
+
+.list .navigation .work .menu {
+  padding-left: 3em !important;
+}
+
+.list .navigation .work .menu .far {
+  color: #4DBD98;
+  font-size: 20px;
+}
+
+.list .navigation .work .menu span {
+  color: #4DBD98;
+  font-size: 14px;
+  padding-left: 0.5em;
+}
+
+.list .navigation .hl {
+  width: 92%;
+  background-color: gray;
+  position: absolute;
+  bottom: 16px;
+  left: 22px;
+  padding: 0.5px;
+  opacity: 0.5;
+}
+
+.modu-card .block-one .log h2 {
+  font-weight: bolder;
+  font-size: 15px;
+  display: inline;
+  padding-right: 10em;
+}
+
+.modu-card .block-one .log span {
+  font-size: 20px;
+}
+
+.modu-card .block-one .allcard {
+  margin-top: 1em;
+}
+
+.modu-card .block-one .allcard .cards {
+  border-radius: 3px;
+  background-color: white;
+  padding: 0.8em;
+  margin: 1em 0;
+  font-size: 11px;
+}
+
+.modu-card .block-one .allcard .cards .card-details {
+  position: relative;
+  padding-bottom: 1em;
+}
+
+.modu-card .block-one .allcard .cards .card-details p {
+  width: 80%;
+}
+
+.modu-card .block-one .allcard .cards .card-details span {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  font-size: 20px;
+}
+
+.modu-card .block-one .allcard .cards .profile {
+  font-size: 12px;
+  position: relative;
+}
+
+.modu-card .block-one .allcard .cards .profile .pics {
+  margin-right: 2em;
+}
+
+.modu-card .block-one .allcard .cards .profile .pics img:nth-child(1) {
+  top: 0;
+  left: 130px;
+  position: absolute;
+}
+
+.modu-card .block-one .allcard .cards .profile .pics img:nth-child(2) {
+  top: 0;
+  left: 140px;
+  position: absolute;
+}
+
+.modu-card .block-one .allcard .cards .profile .pics img:nth-child(3) {
+  top: 0;
+  left: 150px;
+  position: absolute;
+}
+
+.modu-card .block-one .allcard .cards .profile .pics img:nth-child(4) {
+  top: 0;
+  left: 160px;
+  position: absolute;
+}
+
+.modu-card .block-one .allcard .cards .profile .pics img:nth-child(5) {
+  top: 0;
+  left: 170px;
+  position: absolute;
+}
+
+.done .block-one .log h2 {
+  font-weight: bolder;
+  font-size: 15px;
+  display: inline;
+  padding-right: 10em;
+}
+
+.done .block-one .log span {
+  font-size: 20px;
+}
+
+.done .block-one button {
+  margin: 0.5em 0em;
+  width: 100%;
+  padding: 0.3em;
+  display: block;
+  outline: 0;
+  border: 0;
+  color: #23B3E8;
+}
+
+.done .block-one .cards {
+  background-color: white;
+  height: 90vh;
+  width: 100%;
+}
+
+.message {
+  margin: 0em;
+  z-index: 1000;
+  background-color: #4DBD98;
+}
+
+.message p {
+  margin: 0em;
+  padding: 1em 0;
+  text-align: center;
+  color: white;
+}
+
+.testcard .block-one .log h2 {
+  font-weight: bolder;
+  font-size: 15px;
+  display: inline-block;
+  padding-right: 10em;
+}
+
+.testcard .block-one .log span {
+  font-size: 20px;
+}
+
+.testcard .block-one .allcard {
+  margin-top: 1em;
+  border-radius: 2px;
+  background-color: white;
+  padding: 0.8em;
+}
+
+.testcard .block-one .allcard .button1 {
+  padding: 0.8em;
+}
+
+.testcard .block-one .allcard .button1 p {
+  font-size: 13px;
+  width: 60%;
+  display: inline-block;
+}
+
+.testcard .block-one .allcard .button1 .btn-green {
+  width: 25%;
+  float: right;
+  outline: 0;
+  border: 0;
+  padding: 0.3em 0.5em;
+  background-color: #4DBD98;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.testcard .block-one .allcard .button1 .btn-green .fas {
+  padding-left: 0.5em;
+  font-size: 10px;
+}
+
+.testcard .block-one .allcard .button2 {
+  padding: 0.8em;
+}
+
+.testcard .block-one .allcard .button2 p {
+  font-size: 13px;
+  width: 70%;
+  display: inline-block;
+}
+
+.testcard .block-one .allcard .button2 .btn-pink {
+  width: 25%;
+  float: right;
+  outline: 0;
+  border: 0;
+  padding: 0.3em 0.5em;
+  background-color: #EB0E43;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.testcard .block-one .allcard .button2 .btn-pink .fas {
+  padding-left: 0.5em;
+  font-size: 10px;
+}
+
+.testcard .block-one .allcard .button3 {
+  padding: 0.8em;
+}
+
+.testcard .block-one .allcard .button3 p {
+  font-size: 13px;
+  width: 60%;
+  display: inline-block;
+}
+
+.testcard .block-one .allcard .button3 .btn-orange {
+  font-size: 12px;
+  width: 25%;
+  float: right;
+  outline: 0;
+  border-radius: 5px;
+  border: 0;
+  padding: 0.5em;
+  background-color: #F15832;
+  color: #fff;
+}
+
+.testcard .block-one .allcard .button3 .btn-orange .fas {
+  padding-left: 0.5em;
+  font-size: 10px;
+}
+
+.testcard .block-one .allcard .cases-btn {
+  margin: 2em 0em;
+}
+
+.testcard .block-one .allcard .cases-btn .newtest-btn {
+  font-size: 12px;
+  width: 40%;
+  outline: 0;
+  border-radius: 5px;
+  border: 0;
+  padding: 1em;
+  background-color: #4DBD98;
+  color: #fff;
+}
+
+.testcard .block-one .allcard .cases-btn .test-btn {
+  font-size: 12px;
+  width: 40%;
+  float: right;
+  outline: 0;
+  border-radius: 5px;
+  border: 0;
+  padding: 1em;
+  color: #0e0d0d;
+}
+
+.overview .all-block .log h2 {
+  font-weight: bolder;
+  font-size: 15px;
+  display: inline-block;
+  padding-right: 10em;
+}
+
+.overview .all-block .log span {
+  font-size: 20px;
+}
+
+.overview .all-block .allcard {
+  margin-top: 1em;
+  border-radius: 2px;
+  background-color: white;
+  padding: 0.8em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+}
+
+.overview .all-block .allcard span {
+  font-size: 12px;
+}
+
+.overview .all-block .allcard p {
+  font-size: 15px;
+}
+
+.overview .all-block .allcard .tmodule {
+  padding: 2em;
+  margin-right: 1em;
+  background-color: red;
+}
+
+.overview .all-block .allcard .timprove {
+  padding: 2em;
+  margin-right: 1em;
+  background-color: blue;
+}
+
+.overview .all-block .allcard .tmodule-test {
+  padding: 2em;
+  margin-right: 1em;
+  background-color: #F15832;
+}
+
+.overview .all-block .allcard .tfailed {
+  padding: 2em;
+  margin-right: 1em;
+  background-color: #F15832;
+}
+
+.overview .all-block .allcard .tpassed {
+  margin-right: 1em;
+  padding: 2em;
+  background-color: #F15832;
+}
+
+.overview .all-block .allcard .untested {
+  padding: 2em;
+  margin-right: 1em;
+  background-color: #F15832;
+}
