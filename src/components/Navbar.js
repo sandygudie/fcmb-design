@@ -14,7 +14,7 @@ const Navbar = () => {
               <img src="images/Group 3110.png" alt=" fcmb" />
             </li>
             <li className="nav-item  item3 px-3">
-              <img src="images/line.png" alt=" line" />
+              <img src="images/lineicon.png" alt=" line" />
             </li>
             <li className="nav-item  item4 px-4">
               <img src="images/Group 6.png" alt=" search" />

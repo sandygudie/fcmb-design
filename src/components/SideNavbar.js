@@ -15,10 +15,10 @@ const SideNavbar = () => {
             <img src="images/link.png" alt="image" />
           </a>
           <a href="#" className="pb-4">
-            <img src="images/vector.png" alt="image" />
+            <img src="images/faceicon.png" alt="image" />
           </a>
           <a href="#" className="pb-4">
-            <img src="images/vector (1).png" alt="image" />
+            <img src="images/boardicon.png" alt="image" />
           </a>
         </div>
 
