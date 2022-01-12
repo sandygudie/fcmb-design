@@ -153,15 +153,6 @@ $ipadpro: 1160px;
       .label {
         padding-right: 1.5em;
       }
-      .add {
-        position: absolute;
-        bottom: 100px;
-        right: 5px;
-        img {
-          width: 100px;
-          height: 100px;
-        }
-      }
     }
   }
 }
@@ -370,7 +361,7 @@ $ipadpro: 1160px;
 }
 
 // Testcard Component
-.testcard {
+ .testcard {
   .block-one {
     .log {
       h2 {
@@ -389,97 +380,97 @@ $ipadpro: 1160px;
       background-color: white;
       padding: 0.8em;
 
-      .button1 {
-        padding: 0.8em;
-        p {
-          font-size: 13px;
-          width: 60%;
-          display: inline-block;
-        }
-        .btn-green {
-          width: 25%;
-          float: right;
-          outline: 0;
-          border: 0;
-          padding: 0.3em 0.5em;
-          background-color: $primary-color;
-          color: $primary-white;
-          border-radius: 5px;
-          .fas {
-            padding-left: 0.5em;
-            font-size: 10px;
-          }
-        }
-      }
-      .button2 {
-        padding: 0.8em;
-        p {
-          font-size: 13px;
-          width: 70%;
-          display: inline-block;
-        }
-        .btn-pink {
-          width: 25%;
-          float: right;
-          outline: 0;
-          border: 0;
-          padding: 0.3em 0.5em;
-          background-color: $pink-btn;
-          color: $primary-white;
-          border-radius: 5px;
-          .fas {
-            padding-left: 0.5em;
-            font-size: 10px;
-          }
-        }
-      }
-      .button3 {
-        padding: 0.8em;
-        p {
-          font-size: 13px;
-          width: 60%;
-          display: inline-block;
-        }
-        .btn-orange {
-          font-size: 12px;
-          width: 25%;
-          float: right;
-          outline: 0;
-          border-radius: 5px;
-          border: 0;
-          padding: 0.5em;
-          background-color: $orange-btn;
-          color: $primary-white;
-          .fas {
-            padding-left: 0.5em;
-            font-size: 10px;
-          }
-        }
-      }
-      .cases-btn {
-        margin: 2em 0em;
-        .newtest-btn {
-          font-size: 12px;
-          width: 40%;
+      // .button1 {
+      //   padding: 0.8em;
+      //   p {
+      //     font-size: 13px;
+      //     width: 60%;
+      //     display: inline-block;
+      //   }
+      //   .btn-green {
+      //     width: 25%;
+      //     float: right;
+      //     outline: 0;
+      //     border: 0;
+      //     padding: 0.3em 0.5em;
+      //     background-color: $primary-color;
+      //     color: $primary-white;
+      //     border-radius: 5px;
+      //     .fas {
+      //       padding-left: 0.5em;
+      //       font-size: 10px;
+      //     }
+      //   }
+      // }
+      // .button2 {
+      //   padding: 0.8em;
+      //   p {
+      //     font-size: 13px;
+      //     width: 70%;
+      //     display: inline-block;
+      //   }
+      //   .btn-pink {
+      //     width: 25%;
+      //     float: right;
+      //     outline: 0;
+      //     border: 0;
+      //     padding: 0.3em 0.5em;
+      //     background-color: $pink-btn;
+      //     color: $primary-white;
+      //     border-radius: 5px;
+      //     .fas {
+      //       padding-left: 0.5em;
+      //       font-size: 10px;
+      //     }
+      //   }
+      // }
+      // .button3 {
+      //   padding: 0.8em;
+      //   p {
+      //     font-size: 13px;
+      //     width: 60%;
+      //     display: inline-block;
+      //   }
+      //   .btn-orange {
+      //     font-size: 12px;
+      //     width: 25%;
+      //     float: right;
+      //     outline: 0;
+      //     border-radius: 5px;
+      //     border: 0;
+      //     padding: 0.5em;
+      //     background-color: $orange-btn;
+      //     color: $primary-white;
+      //     .fas {
+      //       padding-left: 0.5em;
+      //       font-size: 10px;
+      //     }
+      //   }
+      // }
+      // .cases-btn {
+      //   margin: 2em 0em;
+      //   .newtest-btn {
+      //     font-size: 12px;
+      //     width: 40%;
 
-          outline: 0;
-          border-radius: 5px;
-          border: 0;
-          padding: 1em;
-          background-color: $primary-color;
-          color: $primary-white;
-        }
-        .test-btn {
-          font-size: 12px;
-          width: 40%;
-          float: right;
-          outline: 0;
-          border-radius: 5px;
-          border: 0;
-          padding: 1em;
-          color: $primary-black;
-        }
-      }
+      //     outline: 0;
+      //     border-radius: 5px;
+      //     border: 0;
+      //     padding: 1em;
+      //     background-color: $primary-color;
+      //     color: $primary-white;
+      //   }
+      //   .test-btn {
+      //     font-size: 12px;
+      //     width: 40%;
+      //     float: right;
+      //     outline: 0;
+      //     border-radius: 5px;
+      //     border: 0;
+      //     padding: 1em;
+      //     color: $primary-black;
+      //   }
+      // }
     }
   }
 }

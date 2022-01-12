@@ -135,17 +135,6 @@
   padding-right: 1.5em;
 }
 
-.dashboard .allcontainer .board .add {
-  position: absolute;
-  bottom: 100px;
-  right: 5px;
-}
-
-.dashboard .allcontainer .board .add img {
-  width: 100px;
-  height: 100px;
-}
-
 .list {
   position: relative;
 }
@@ -368,111 +357,6 @@
   border-radius: 2px;
   background-color: white;
   padding: 0.8em;
-}
-
-.testcard .block-one .allcard .button1 {
-  padding: 0.8em;
-}
-
-.testcard .block-one .allcard .button1 p {
-  font-size: 13px;
-  width: 60%;
-  display: inline-block;
-}
-
-.testcard .block-one .allcard .button1 .btn-green {
-  width: 25%;
-  float: right;
-  outline: 0;
-  border: 0;
-  padding: 0.3em 0.5em;
-  background-color: #4dbd98;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.testcard .block-one .allcard .button1 .btn-green .fas {
-  padding-left: 0.5em;
-  font-size: 10px;
-}
-
-.testcard .block-one .allcard .button2 {
-  padding: 0.8em;
-}
-
-.testcard .block-one .allcard .button2 p {
-  font-size: 13px;
-  width: 70%;
-  display: inline-block;
-}
-
-.testcard .block-one .allcard .button2 .btn-pink {
-  width: 25%;
-  float: right;
-  outline: 0;
-  border: 0;
-  padding: 0.3em 0.5em;
-  background-color: #eb0e43;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.testcard .block-one .allcard .button2 .btn-pink .fas {
-  padding-left: 0.5em;
-  font-size: 10px;
-}
-
-.testcard .block-one .allcard .button3 {
-  padding: 0.8em;
-}
-
-.testcard .block-one .allcard .button3 p {
-  font-size: 13px;
-  width: 60%;
-  display: inline-block;
-}
-
-.testcard .block-one .allcard .button3 .btn-orange {
-  font-size: 12px;
-  width: 25%;
-  float: right;
-  outline: 0;
-  border-radius: 5px;
-  border: 0;
-  padding: 0.5em;
-  background-color: #f15832;
-  color: #fff;
-}
-
-.testcard .block-one .allcard .button3 .btn-orange .fas {
-  padding-left: 0.5em;
-  font-size: 10px;
-}
-
-.testcard .block-one .allcard .cases-btn {
-  margin: 2em 0em;
-}
-
-.testcard .block-one .allcard .cases-btn .newtest-btn {
-  font-size: 12px;
-  width: 40%;
-  outline: 0;
-  border-radius: 5px;
-  border: 0;
-  padding: 1em;
-  background-color: #4dbd98;
-  color: #fff;
-}
-
-.testcard .block-one .allcard .cases-btn .test-btn {
-  font-size: 12px;
-  width: 40%;
-  float: right;
-  outline: 0;
-  border-radius: 5px;
-  border: 0;
-  padding: 1em;
-  color: #0e0d0d;
 }
 
 .overview .all-block .log h2 {
